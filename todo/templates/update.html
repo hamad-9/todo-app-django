@@ -1,0 +1,8 @@
+<h1>Update task</h1>
+
+<form action="updaterecord/{{ mytask.id }}" method="post">
+  {% csrf_token %} Description:<br />
+  <input name="description" value="{{ mytask.description }}" />
+  <br /><br />
+  <input type="submit" value="Submit" />
+</form>
