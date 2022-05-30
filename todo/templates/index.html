@@ -1,0 +1,11 @@
+<h1>Members</h1>
+
+<table border="1">
+  {% for x in mytasks %}
+  <tr>
+    <td>{{ x.id }}</td>
+    <td>{{ x.description }}</td>
+    <td>{{ x.isDone }}</td>
+  </tr>
+  {% endfor %}
+</table>
